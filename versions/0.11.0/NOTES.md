@@ -1,0 +1,10 @@
+- Numéros directs (Téléphonie > Ligne et accueil) : chaque numéro direct (SDA) de la ligne mène à un poste, un groupe, une file, une messagerie ou à l'accueil ; un poste peut présenter son numéro direct en sortie.
+- Fermetures exceptionnelles : jours fériés français calculés automatiquement (Pâques, Ascension et Pentecôte compris) et cochables un par un, périodes de fermeture (congés) ; pendant une fermeture, l'accueil passe en « fermé ».
+- Codes de service : *8 et **poste pour intercepter un appel, *70 pour garer un appel (places 71 à 79), *76 pour « ne pas déranger », et pendant un appel ## (transfert direct) et *2 (transfert accompagné). La touche de transfert des téléphones fonctionne.
+- Supervision en direct (nouvel écran) : appels en cours, état de chaque poste (libre, sonne, en ligne, non enregistré, ne pas déranger) et files d'attente ; un administrateur peut raccrocher un appel (audité). Panneau mural plein écran en lecture seule sur `/mural`. L'AMI d'Asterisk n'écoute que sur 127.0.0.1.
+- Fenêtre de maintenance (Système > Mises à jour) : installation automatique des nouvelles versions de VOIPbuntu et des correctifs de sécurité d'Ubuntu (dépôt `-security` seul) dans une plage choisie, e-mail avant et après, redémarrage si nécessaire ou planifié.
+- Retour arrière : la version précédente et sa configuration sont gardées ; bouton « Revenir à la version précédente », et retour automatique si la console ne répond plus 5 minutes après une mise à jour (pour les mises à jour faites depuis la 0.11.0).
+- Archive pour le support : versions, journaux et configuration, sans aucun mot de passe ni clé.
+- Active Directory (Système > Active Directory) : connexion à la console avec un compte AD (groupe AD vers le rôle administrateur ou lecture seule, LDAPS ou StartTLS vérifié, repli sur les comptes locaux, double authentification possible) ; import horaire des contacts d'une OU dans l'annuaire partagé, publiés aussi aux téléphones par LDAP ; postes proposés depuis `ipPhone` ou un numéro court.
+- Aucun paquet ajouté à l'ISO.
+
