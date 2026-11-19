@@ -1,0 +1,10 @@
+# VOIPbuntu 0.10.0
+
+
+- Annuaire sur les téléphones (Téléphonie > Annuaire) : les bases Gigaset N670 et les téléphones SIP consultent l'annuaire partagé et la liste des postes par LDAP (port 389, réseaux des téléphones seulement, lecture seule) ; nom de l'appelant affiché par recherche inverse du numéro ; compte de lecture dont le mot de passe n'est montré qu'une fois, ou consultation anonyme en option ; marche à suivre pour la N670. Serveur intégré, aucun paquet ajouté.
+- Provisionnement automatique des téléphones Yealink, Snom, Grandstream et Fanvil (Téléphonie > Postes, « Associer un téléphone ») : fichier de configuration par téléphone (compte SIP, serveur, messagerie, langue, fuseau, NTP, annuaire LDAP) servi en HTTPS sur le port 8443, et en HTTP sur option, aux seuls réseaux des téléphones, avec un identifiant et un mot de passe par téléphone ; journal des téléchargements ; aide pour l'option DHCP 66 sur un serveur Windows. Un changement de poste régénère son fichier, une suppression l'efface.
+- Files d'attente (Téléphonie > Files d'attente) : postes membres, sonnerie « tous ensemble » ou « chacun son tour », annonce et musique d'attente, attente maximale puis débordement vers un poste, un groupe ou une messagerie ; une file peut servir de destination dans l'accueil vocal.
+- Enregistrement des appels, facultatif par poste ou par file, seulement après l'envoi de l'annonce d'information ; durée de conservation réglable (1 à 365 jours) ; écoute et téléchargement réservés aux administrateurs et audités.
+- Système > Diagnostic (administrateurs) : capture réseau SIP et RTP de 1 à 10 minutes (pcap pour Wireshark, 20 Mo au plus) et trace SIP d'un poste ; tcpdump ajouté à l'ISO.
+- Sécurité : les fichiers des dossiers de la console (adresse de l'opérateur, ports du provisionnement) sont lus par le pare-feu sans être exécutés, et les fichiers écrits par root pour le provisionnement ne suivent plus un lien symbolique.
+
