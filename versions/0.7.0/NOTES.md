@@ -9,6 +9,7 @@ Regroupe les versions 0.3.0 à 0.7.0 (mise à jour directe depuis 0.2.0).
 - Les sauvegardes contiennent aussi les réseaux des téléphones (restaurés et appliqués) ; les sauvegardes 0.2 à 0.6 restent restaurables.
 - Restauration possible jusqu'à 1 Mo (grandes configurations).
 - Mises à jour : message clair si le nom du serveur ne se résout pas (DNS de l'appliance) ou si aucune version n'est publiée ; les boutons indisponibles apparaissent grisés.
+- Publication sans release GitHub : à partir de cette version, l'appliance lit latest.json dans le dépôt public.
 
 ### 0.6.0
 
