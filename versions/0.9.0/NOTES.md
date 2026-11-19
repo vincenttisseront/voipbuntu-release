@@ -1,0 +1,14 @@
+VOIPbuntu 0.9.0
+
+
+- Nouvelle identité visuelle propre à VOIPbuntu : symbole « V et ondes radio », palette encre, sarcelle, menthe et corail, police Manrope ; console web, menu de démarrage de l'ISO (BIOS et UEFI), menu console et assistant.
+- Sauvegardes complètes : archive avec les annonces, la musique d'attente, les messages vocaux (option) et les réglages des alertes et du réseau ; les anciennes sauvegardes restent restaurables.
+- Copie automatique des sauvegardes vers un partage réseau Windows (SMB) ou un serveur SFTP, avec rotation et bouton « Tester la copie ».
+- Annuaire partagé : contacts, import CSV d'Outlook et de Google, export pour Excel ; le nom du contact s'affiche sur les postes quand il appelle.
+- Numéros abrégés *100 à *199 vers des numéros extérieurs.
+- Journal des appels : filtres par poste, sens, statut et date, export CSV, statistiques sur 30 jours ; appels manqués par poste au tableau de bord.
+- Plusieurs comptes pour la console, rôle administrateur ou lecture seule (Système > Comptes) ; les sauvegardes, qui contiennent des secrets, ne se téléchargent qu'en administrateur.
+- Double authentification facultative (application TOTP, QR code, 8 codes de secours).
+- Import du certificat HTTPS de l'entreprise (PEM ou PKCS#12), vérifié, avec retour automatique à l'ancien si nginx le refuse.
+- Correctif : une requête refusée avant la lecture de son contenu ne fait plus échouer la requête suivante.
+
