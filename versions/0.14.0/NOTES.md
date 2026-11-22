@@ -1,0 +1,8 @@
+VOIPbuntu 0.14.0
+
+- Droits d'appel par poste (Téléphonie > Ligne et accueil) : « tout ce que la ligne permet » (par défaut, comme avant), « France (fixes et mobiles) » ou « internes seulement ». Les numéros d'urgence restent toujours joignables ; les numéros abrégés et les transferts aveugles (## ou touche de transfert) suivent les droits du poste. Chaque changement est audité.
+- Renvoi depuis le combiné, pratique sur les DECT : *72 suivi du numéro (ou *72 seul, puis le numéro et #) renvoie tous les appels du poste, *73 l'annule. Destination vérifiée (poste, groupe, file, ou extérieur selon la ligne et les droits ; jamais une urgence), trois rebonds au plus ; un poste renvoyé ne sonne plus dans les groupes et les files. Le renvoi est affiché dans la console et un administrateur peut l'annuler.
+- Protection contre les attaques SIP (Téléphonie > Réseaux) : une adresse hors des réseaux des téléphones est bannie par le pare-feu après 5 échecs en dix minutes (réglable), une adresse des réseaux des téléphones seulement si elle balaie des identifiants ; jamais l'opérateur, les bases DECT déclarées ni la liste blanche. Bannissement de 60 minutes par défaut, liste des adresses bannies, levée par un administrateur, alerte e-mail.
+- Salles de conférence (Téléphonie > Groupes et renvois) : numéro court, 2 à 30 participants, code d'entrée facultatif ; joignables depuis un numéro direct ou l'accueil vocal.
+- Appel général (interphone) : un numéro qui fait parler sur le haut-parleur de plusieurs postes ; les téléphones SIP compatibles décrochent seuls, les combinés DECT sonnent ; en option dans les deux sens.
+- Aucun paquet ajouté à l'ISO (app_confbridge, app_page et app_read font partie d'Asterisk 20 déjà installé).
