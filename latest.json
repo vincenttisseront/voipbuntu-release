@@ -1,5 +1,5 @@
 {
-  "version": "0.15.0",
-  "published": "2026-11-22T13:54:52Z",
-  "notes": "VOIPbuntu 0.15.0\n"
+  "version": "0.15.1",
+  "published": "2026-11-23T10:02:20Z",
+  "notes": "VOIPbuntu 0.15.1\n\n- Fiche de la base DECT : redémarrer la base si elle a essayé de s'enregistrer avant la création du poste.\n- Postes DECT : « C'est la base, pas un combiné » n'apparaît plus sur un poste enregistré (il supprimait le compte d'un vrai combiné).\n"
 }
